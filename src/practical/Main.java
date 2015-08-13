@@ -790,6 +790,8 @@ public class Main extends Application {
         indexMenu.getItems().addAll(viewItem, addItem, editItem, deleteItem, permissionItem, sepItem, exitItem);
         Menu helpMenu = new Menu("Тусламж");
         MenuBar menuBar = new MenuBar();
+        menuBar.setStyle("-fx-background-color: #FCFCFC; -fx-border-color: lightgray; -fx-border-width: 0px 0px 1px 0px;");
+        menuBar.setPadding(new Insets(0, 15, 0, 15));
         menuBar.getMenus().add(indexMenu);
         menuBar.getMenus().add(helpMenu);
 
